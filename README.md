@@ -8,7 +8,7 @@ Goal of this project is to completely upgrade the electrical system of this 30A 
 
 The primary flaw in the OEM config is the Magnetek Series 950 Converter being unable to do any smart charging of the batteries, so when the RV is plugged into shore power it is very slow to charge the aux batteries and actually wears down the starter battery do to overcharge when the RV is plugged in for extended periods of time.
 
-### Planned Conversion to LiFePO4 and Solar
+## Planned Conversion to LiFePO4 and Solar
 
 The major upgrades of this conversion are as follows:
 1. Replace the 2 series connected 6V lead acid Aux batteries with 8 LiFePO4 cells in a series configuration, creating a 24V 280Ah battery bank with a power capacity of 7.2kWh.  Moving from 12V to 24V for the house battery increases the power density of the whole system and enables it to be wired with thinner cables to cut down on cost.
@@ -23,16 +23,22 @@ The system diagram after the conversion is shown below.
 
 ![Alt text](Brenckle_RV_Electrical_Plan.png)
 
-# Cost savings
+## Cost savings
 
+A major goal of this project is to keep cost as low as possible without sacrificing any functionality or performance.  All in all a total cost of under $2,500 for this project (not counting any of my labor), is ridiculously cheap when to buy an equivalent system and have it installed would cost north of $12,000.  The key areas where cost was able to be spared was:
 
+1. Obtaining the solar panels from OfferUp.  I managed to find 7 panels capable of producing 1470W of solar power for only $250.
+2. Only using Victron equipment where it made sense and when we did to buy that equipment used. For comparison the Victron Multiplus inverter would be $1300 and not include a solar controller, whereas the SunGold All-in-one was only $649.
+3. Using a Raspberry Pi for the system monitoring and reporting along with a cheap display could be done for less than $50, but a Victron Cerbo GX and Cerbo Screen would cost over $600.
+4. Building the 24V battery from individual cells instead of buying pre-assembled Lithium batteries saved roughly 50% on the cost and allowed us to use a better BMS that would monitor all the cells and keep them all balanced, thus extending their life and increasing performance.
 
+As you can see the from the total cost breakdown below the batteries and the all-in-one were roughly 1/3 of the total cost each with all the remaining components making up the last 1/3.
 
+![Alt text](RV_Upgrade_Cost_breakdown.png)
 
+The complete listing of all the parts used and considered can be found [here]( RV_upgrade_pricing.xlsx).
 
-
-
-# License
+## License
 
 This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
